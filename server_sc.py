@@ -42,4 +42,4 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
         conn.sendall(d)
         print("100% DONE")
         file.close()
-        s.close()
+        conn.close()
